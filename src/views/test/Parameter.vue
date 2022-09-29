@@ -1,7 +1,7 @@
 <template>
   <div >
     <CommunicationContent />
-    <p>{{param}}님 현재 페이지는 개발 진행중입니다. ^_^@</p>
+    <p>{{param}}님 현재 페이지는 개발 진행중입니다. ^_^</p>
   </div>
 </template>
 
