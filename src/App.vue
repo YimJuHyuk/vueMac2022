@@ -90,7 +90,7 @@
     <!-- <a target="_blank" href="https://www.npmjs.com/package/vue-pagination-2">Vue Pagination 2</a> -->
     <!-- <router-link class="atg" target="_blank" to="/"> -->
       <a href="#" class="atg" target="_blank" @click="refresh()">
-        무한삽질 개발자의 개인 페이지 <br/>HI JENKINS CI/CD 33
+        무한삽질 개발자의 개인 페이지 <br/>HI JENKINS CI/CD 333
       </a>
     <!-- </router-link> -->
   </h2>
