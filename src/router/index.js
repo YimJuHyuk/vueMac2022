@@ -24,6 +24,11 @@ const routes = [
         name: "Parameter",
         component: () => import('@/views/test/Parameter.vue') // 현재 라인에서 임포트 하자마자 컴포넌트에 주입하는 방식
     },
+    {
+        path: "/particle",
+        name: "Particle",
+        component: () => import('@/components/particles/Particles.vue') // 현재 라인에서 임포트 하자마자 컴포넌트에 주입하는 방식
+    },
 ];
 
 // 이렇게 해도 된다.

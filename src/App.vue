@@ -1,6 +1,90 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <Particles id="tsparticles" />
+
+  <!-- <Particles
+    id="tsparticles"
+    :particlesInit="particlesInit"
+    :particlesLoaded="particlesLoaded"
+    :options="{
+      background: {
+        color: {
+          value: '#0d47a1'
+        }
+      },
+      fpsLimit: 120,
+      interactivity: {
+        events: {
+            onClick: {
+              enable: true,
+              mode: 'push'
+            },
+            onHover: {
+              enable: true,
+              mode: 'repulse'
+            },
+            resize: true
+        },
+        modes: {
+          bubble: {
+            distance: 400,
+            duration: 2,
+            opacity: 0.8,
+            size: 40
+          },
+          push: {
+            quantity: 4
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4
+          }
+        }
+      },
+      particles: {
+        color: {
+          value: '#ffffff'
+        },
+        links: {
+          color: '#ffffff',
+          distance: 150,
+          enable: true,
+          opacity: 0.5,
+          width: 1
+        },
+        collisions: {
+          enable: true
+        },
+        move: {
+          direction: 'none',
+          enable: true,
+          outMode: 'bounce',
+          random: false,
+          speed: 6,
+          straight: false
+        },
+        number: {
+            density: {
+              enable: true,
+              area: 800
+            },
+            value: 80
+        },
+        opacity: {
+          value: 0.5
+        },
+        shape: {
+          type: 'circle'
+        },
+        size: {
+          random: true,
+          value: 5
+        }
+      },
+      detectRetina: true
+    }"
+  /> -->
 
   <h2>
     <!-- <a target="_blank" href="https://www.npmjs.com/package/vue-pagination-2">Vue Pagination 2</a> -->
@@ -52,20 +136,29 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
+import Particles from './components/particles/Particles.vue'
 
 // import Pagenation from 'vue-pagination-2';
 
+// import { loadFull } from "tsparticles";
+
+
 export default {
   name: 'App',
+  props: {
+  },
   components: {
     // HelloWorld,
     // Pagenation
+    Particles
   },
   data() {
     return {
       page: 1,
       userId: '' // 로그인 아이디
     }
+  },
+  mounted() {
   },
   methods: {
     // callback: function(page) {
@@ -85,5 +178,19 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  #tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    /* background-image: url(""); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+  }
+  </style>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

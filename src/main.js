@@ -6,6 +6,9 @@ import { router } from "@/router/index"; // 라우터 추가
 
 import './assets/css/main.css';
 
+import VueParticles from 'vue-particles'
+// import Particles from "vue3-particles";
+
 // 이렇게도 설정가능 시작
 // const app = createApp(App);
 
@@ -15,4 +18,8 @@ import './assets/css/main.css';
 // app.mount('#app');
 // 이렇게도 설정가능 끝
 
-createApp(App).use(router).mount('#app')
+createApp(App)
+.use(router)
+.use(VueParticles)
+// .use(Particles)
+.mount('#app')
